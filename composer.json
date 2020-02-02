@@ -1,0 +1,35 @@
+{
+  "name": "gerfey/response-builder",
+  "description": "Implementing a Response Builder",
+  "license": "MIT",
+  "keywords": [
+    "gerfey",
+    "response-builder"
+  ],
+  "authors": [
+    {
+      "name": "Alexander Levchenkov",
+      "email": "sanjia@live.ru"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gerfey\\ResponseBuilder\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Gerfey\\ResponseBuilder\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

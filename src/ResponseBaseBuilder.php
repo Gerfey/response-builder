@@ -55,7 +55,7 @@ class ResponseBaseBuilder implements ResponseBuilderInterface
 
     private function make(bool $success, int $http_code, string $message, $data = []): JsonResponse
     {
-        return JsonResponse::create($this->buildResponse($success, $http_code, $message, $data));
+        return new JsonResponse($this->buildResponse($success, $http_code, $message, $data), $http_code);
     }
 
     private function buildResponse(bool $success, int $http_code, string $message, $data = []): array
